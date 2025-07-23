@@ -536,15 +536,26 @@ input {
   position: fixed;
   top: 0;
   left: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.backdrop.is-open {
+  opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+
+}
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 408px;
   height: 584px;
-  padding: 24px;
+  padding: 72px 24px 24px;
   background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -553,6 +564,9 @@ input {
 }
 
 .modal-btn {
+position: absolute;
+top: 24px;
+right: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -588,6 +602,7 @@ input {
     color: #2e2f42;
     text-align: center;
     margin-bottom: 16px;
+   
 
 }
 .modal-form {}
@@ -602,11 +617,12 @@ input {
     line-height: 1.16;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    margin-bottom: 4px;
+   
 }
 
 .modal-form-field {
   position: relative;
+  margin-top: 4px;
 }
 
 .modal-form-input {
@@ -643,6 +659,7 @@ input {
   border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     padding: 8px 16px;
+      margin-top: 4px;
     font-weight: 400;
       font-size: 12px;
       line-height: 1.16;
@@ -658,5 +675,47 @@ input {
 .modal-form-reviev::placeholder {
 
   color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-form-agreement {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+
+.modal-form-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    cursor: pointer;
+
+}
+
+.checkbox:checked + .modal-form-checkbox {
+  background-color: #404bbf;
+  border-radius: 2px;
+  border: 1px solid #404bbf;
+
+}
+
+.modal-form-checkbox-icon {
+  
+}
+
+.modal-form-agreement-link {
+    line-height: 1.33;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color:#4d5ae5;
 }
 /* #endregion */
