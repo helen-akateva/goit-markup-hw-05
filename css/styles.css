@@ -40,6 +40,10 @@ img {
   height: auto;
 }
 
+input {
+  font-family: inherit;
+}
+
 /* #endregion */
 .text {
   font-weight: 400;
