@@ -736,7 +736,7 @@ input {
   color: rgba(46, 47, 66, 0.4);
 }
 
-.modal-form-checkbox{
+.modal-form-wrapper-checkbox {
   margin-bottom: 24px;
 }
 .modal-form-agreement {
