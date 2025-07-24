@@ -533,6 +533,9 @@ input {
     color: #ffffff;
 }
 
+.email-input-footer {
+  margin-left: 80px;
+}
 .footer-form {
   display: flex;
   gap: 24px;
