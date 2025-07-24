@@ -555,7 +555,7 @@ input {
   color: #ffffff;
   
 }
-.placholder {
+.footer-input::placeholder {
   color: #ffffff;
 }
 .footer-btn {
