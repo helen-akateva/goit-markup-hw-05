@@ -527,10 +527,10 @@ input {
 .subscribe-text {
   margin-bottom: 16px;
   font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
 }
 
 .email-input-footer {
@@ -553,7 +553,6 @@ input {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
-  
 }
 .footer-input::placeholder {
   color: #ffffff;
@@ -566,14 +565,14 @@ input {
   align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #4d5ae5;
-    border: none;
-    border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
 }
 
 .footer-form-icon {
@@ -594,14 +593,14 @@ input {
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
-} 
+}
 .modal {
   position: absolute;
   top: 50%;
@@ -632,15 +631,13 @@ input {
   background-color: #e7e9fc;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: #404bbf;
   border: none;
- 
-  
 }
 .modal-btn-icon {
   fill: #2e2f42;
@@ -662,7 +659,7 @@ input {
   text-align: center;
   margin-bottom: 16px;
 }
-.modal-form-wrapper{
+.modal-form-wrapper {
   margin-bottom: 8px;
 }
 .modal-form-label {
@@ -677,7 +674,6 @@ input {
 
 .modal-form-field {
   position: relative;
-  
 }
 
 .modal-form-input {
@@ -729,7 +725,7 @@ input {
 .modal-form-review:focus {
   border-color: #4d5ae5;
 }
-.modal-form-wrapper-comment{
+.modal-form-wrapper-comment {
   margin-bottom: 16px;
 }
 
@@ -741,7 +737,7 @@ input {
   margin-bottom: 24px;
 }
 .modal-form-agreement {
-  display:block; 
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -770,9 +766,6 @@ input[type="checkbox"]:checked + label .modal-form-checkbox {
   border: none;
   fill: #f4f4fd;
 }
-
-
-
 
 .privace-link {
   text-decoration: underline;
