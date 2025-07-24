@@ -521,9 +521,11 @@
 
             <button class="footer-btn" type="submit">
               <span>Subscribe</span>
-              <svg class="footer-form-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
+              <span>
+                <svg class="footer-form-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </span>
             </button>
           </form>
         </div>
@@ -590,13 +592,14 @@
           </div>
 
           <div class="modal-form-wrapper-comment">
-            <label class="modal-form-label" for="urer-comment">Comment</label>
+            <label class="modal-form-label" for="user-comment">Comment</label>
             <textarea
+              id="user-comment"
+              name="user-comment"
               class="modal-form-reviev"
-              name="urer-comment"
-              id="urer-comment"
               placeholder="Text input"
-            ></textarea>
+            >
+            </textarea>
           </div>
 
           <div class="modal-form-wrapper-checkbox">
@@ -620,7 +623,12 @@
               >
 
               <span class="modal-form-checkbox">
-                <svg class="modal-form-checkbox-icon" width="10" height="8">
+                <svg
+                  class="modal-form-checkbox-icon"
+                  width="10"
+                  height="8"
+                  aria-hidden="true"
+                >
                   <use href="./images/icons.svg#icon-click"></use>
                 </svg>
               </span>

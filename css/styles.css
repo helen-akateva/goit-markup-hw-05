@@ -630,6 +630,7 @@ input {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
+  cursor: pointer;
   transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -638,6 +639,7 @@ input {
 .modal-btn:focus {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
   
 }
 .modal-btn-icon {
@@ -672,11 +674,12 @@ input {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  margin-bottom: 4px;
 }
 
 .modal-form-field {
   position: relative;
-  margin-top: 4px;
+  
 }
 
 .modal-form-input {
