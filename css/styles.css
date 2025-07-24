@@ -639,7 +639,7 @@ input {
 .modal-btn:focus {
   background-color: #404bbf;
   border: none;
-  fill: #ffffff;
+ 
   
 }
 .modal-btn-icon {
@@ -647,13 +647,11 @@ input {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn-icon:hover{
-  fill: #ffffff;
-} 
-
-.modal-btn-icon:focus{
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon {
   fill: #ffffff;
 }
+
 .modal-slogan {
   max-width: 360px;
   font-weight: 500;
@@ -776,10 +774,8 @@ input[type="checkbox"]:checked + label .modal-form-checkbox {
 
 
 
-.modal-form-agreement-link {
-  line-height: 1.33;
+.privace-link {
   text-decoration: underline;
-  text-decoration-skip-ink: none;
   color: #4d5ae5;
 }
 
