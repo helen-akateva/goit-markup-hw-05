@@ -553,13 +553,14 @@ input {
   top: 50%;
   left: 50%;
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   padding: 72px 24px 24px;
   background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%);
+  transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn {
@@ -569,9 +570,10 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
   width: 24px;
   height: 24px;
-  border-radius: 100%;
+  border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
   transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -580,6 +582,7 @@ input {
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: #404bbf;
+  border: none;
 }
 .modal-btn-icon {
   fill: #2e2f42;
@@ -588,7 +591,7 @@ input {
 
 .modal-btn-icon:hover,
 .modal-btn-icon:focus {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .modal-slogan {
@@ -601,19 +604,15 @@ input {
   text-align: center;
   margin-bottom: 16px;
 }
-.modal-form {
-}
-
-.modal-form-wrapper {
-  margin-bottom: 8px;
-}
 
 .modal-form-label {
+  display: block;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  margin-bottom: 4px;
 }
 
 .modal-form-field {
@@ -628,9 +627,10 @@ input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding: 11px 24px 11px 38px;
-  outline: none;
+  outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .modal-form-input:focus {
@@ -643,6 +643,7 @@ input {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus + .modal-form-icon {
@@ -699,9 +700,6 @@ input {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
-}
-
-.modal-form-checkbox-icon {
 }
 
 .modal-form-agreement-link {
