@@ -452,6 +452,7 @@ input {
 .footer-container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-logo-text {
@@ -575,6 +576,10 @@ input {
   border-radius: 4px;
 }
 
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: #404bbf;
+}
 .footer-form-icon {
   margin-left: 16px;
 }
